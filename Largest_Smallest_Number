@@ -8,33 +8,32 @@ print("Largest so far:",largest_so_far)
 print("Smallest so far:",smallest_so_far)
 while True:
  Value = [7, 2, 'bob', 10, 4, 'done']
- Val = int(Value)
  n > 0
+ try:
+     Value = [7, 2, 10, 4]                 
+ except: 
+     Value == ['bob']
+     print(n,"Invalid input")
+     continue  
+ if Value == 'done':
+     break 
  for Val in Value :
      n = n + 1
      print(n,"Value:", Val)
      if largest_so_far is None :
-        largest_so_far = Val
-        if largest_so_far < Val :
-           largest_so_far = Val
-        else :
-           largest_so_far = largest_so_far
-     print("Largest so far:", largest_so_far)
+        largest_so_far == Val          
+     while largest_so_far < Val :  
+        largest_so_far == Val
+        print("Largest so far:", Val)                  
+     else : 
+        largest_so_far = largest_so_far
      if smallest_so_far is None :
-        smallest_so_far = Val
-        if smallest_so_far > Val :
-           smallest_so_far = Val
-        else :
-           smallest_so_far = smallest_so_far
-     print("Smallest so far:", smallest_so_far)
- try:
-     Value = [7, 2, 10, 4]
- except:
-     Value == 'bob'
-     print(n,"Invalid input")
-     continue
- if Value == 'done':
-     break
-print("Done")
+        smallest_so_far == Val 
+     while smallest_so_far > Val :
+        smallest_so_far == Val 
+        print("Smallest so far:", Val) 
+     else :
+        smallest_so_far == smallest_so_far                
+print("Done")   
 print("Maximum is", largest_so_far)
 print("Minimum is", smallest_so_far)
